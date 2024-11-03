@@ -22,7 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.txt_ProdName = New System.Windows.Forms.TextBox()
+        Me.txt_ProductName = New System.Windows.Forms.TextBox()
         Me.txt_Price = New System.Windows.Forms.TextBox()
         Me.dtp_Expire = New System.Windows.Forms.DateTimePicker()
         Me.cb_Available = New System.Windows.Forms.CheckBox()
@@ -36,25 +36,20 @@ Partial Class Form1
         Me.cb_ProdGroup = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.txt_ProdNo = New System.Windows.Forms.TextBox()
+        Me.txt_ProductNo = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_Search = New System.Windows.Forms.TextBox()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'txt_ProdName
+        'txt_ProductName
         '
-        Me.txt_ProdName.Location = New System.Drawing.Point(63, 101)
-        Me.txt_ProdName.Name = "txt_ProdName"
-        Me.txt_ProdName.Size = New System.Drawing.Size(214, 20)
-        Me.txt_ProdName.TabIndex = 1
+        Me.txt_ProductName.Location = New System.Drawing.Point(63, 101)
+        Me.txt_ProductName.Name = "txt_ProductName"
+        Me.txt_ProductName.Size = New System.Drawing.Size(214, 20)
+        Me.txt_ProductName.TabIndex = 1
         '
         'txt_Price
         '
@@ -170,7 +165,6 @@ Partial Class Form1
         Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
         Me.DataGridView1.Location = New System.Drawing.Point(301, 82)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
@@ -178,12 +172,12 @@ Partial Class Form1
         Me.DataGridView1.Size = New System.Drawing.Size(465, 299)
         Me.DataGridView1.TabIndex = 16
         '
-        'txt_ProdNo
+        'txt_ProductNo
         '
-        Me.txt_ProdNo.Location = New System.Drawing.Point(63, 56)
-        Me.txt_ProdNo.Name = "txt_ProdNo"
-        Me.txt_ProdNo.Size = New System.Drawing.Size(214, 20)
-        Me.txt_ProdNo.TabIndex = 0
+        Me.txt_ProductNo.Location = New System.Drawing.Point(63, 56)
+        Me.txt_ProductNo.Name = "txt_ProductNo"
+        Me.txt_ProductNo.Size = New System.Drawing.Size(214, 20)
+        Me.txt_ProductNo.TabIndex = 0
         '
         'Label1
         '
@@ -210,57 +204,21 @@ Partial Class Form1
         Me.txt_Search.Size = New System.Drawing.Size(214, 20)
         Me.txt_Search.TabIndex = 17
         '
-        'Column1
+        'Button1
         '
-        Me.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column1.HeaderText = "Product Number"
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill
-        Me.Column2.HeaderText = "Product Name"
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column3.HeaderText = "Price"
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        Me.Column3.Width = 56
-        '
-        'Column4
-        '
-        Me.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column4.HeaderText = "Product Group"
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        Me.Column4.Width = 93
-        '
-        'Column5
-        '
-        Me.Column5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column5.HeaderText = "Expiry Date"
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        Me.Column5.Width = 79
-        '
-        'Column6
-        '
-        Me.Column6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.Column6.HeaderText = "Status"
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        Me.Column6.Width = 43
+        Me.Button1.Location = New System.Drawing.Point(133, 13)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 19
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txt_Search)
         Me.Controls.Add(Me.DataGridView1)
@@ -277,8 +235,8 @@ Partial Class Form1
         Me.Controls.Add(Me.cb_Available)
         Me.Controls.Add(Me.dtp_Expire)
         Me.Controls.Add(Me.txt_Price)
-        Me.Controls.Add(Me.txt_ProdName)
-        Me.Controls.Add(Me.txt_ProdNo)
+        Me.Controls.Add(Me.txt_ProductName)
+        Me.Controls.Add(Me.txt_ProductNo)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -286,7 +244,7 @@ Partial Class Form1
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents txt_ProdName As TextBox
+    Friend WithEvents txt_ProductName As TextBox
     Friend WithEvents txt_Price As TextBox
     Friend WithEvents dtp_Expire As DateTimePicker
     Friend WithEvents cb_Available As CheckBox
@@ -300,14 +258,9 @@ Partial Class Form1
     Friend WithEvents cb_ProdGroup As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents DataGridView1 As DataGridView
-    Friend WithEvents txt_ProdNo As TextBox
+    Friend WithEvents txt_ProductNo As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_Search As TextBox
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column6 As DataGridViewCheckBoxColumn
+    Friend WithEvents Button1 As Button
 End Class
